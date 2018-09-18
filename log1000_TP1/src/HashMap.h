@@ -33,7 +33,7 @@ public:
     void remove(const std::string &key);
 
     std::vector<std::string> getKeys() const;
-	//int compter (const std::string& key);
+	int compter (const std::string& key);
 
 private:
     // hash table

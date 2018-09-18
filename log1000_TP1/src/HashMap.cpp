@@ -104,19 +104,19 @@ std::vector<std::string> HashMap::getKeys() const{
   return res;
 }
 
-/*
+
 int HashMap::compter(const std::string& key) {
   int value;
   // si la cle existe, incrementer la valeur
-  if( // TODO...)
+  if( get(key,value))
 	value ++;
   //sinon, ajouter la cle avec la valeur 1
   else
 	value = 1;
 
  // Stocker la cle et sa valeur dans le hashMap
- // TODO...
+  put(key,value);
  
  return value;
 }
-*/
+
