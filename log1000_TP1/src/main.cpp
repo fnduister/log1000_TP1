@@ -13,7 +13,7 @@
 
 using namespace std;
 
-/* */
+/* sfasdfasdfasdfasdfads*/
 int main(int argc, char** argv) {
 if(argc<2){
 	std::cerr << "Usage:" << argv[0]<<"VOUS DEVEZ SPECIFIER LE NOM DU FICHIER"<<std::endl;
