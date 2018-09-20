@@ -6,13 +6,26 @@
  */
 
 #include <iostream>
+#include <string>
+#include <fstream>
 #include "HashMap.h"
+
 
 using namespace std;
 
 /* */
 int main(int argc, char** argv) {
-
+if(argc<2){
+	std::cerr << "Usage:" << argv[0]<<"VOUS DEVEZ SPECIFIER LE NOM DU FICHIER"<<std::endl;
+	return 1;
+	
+	}
+	std::ifstream myFile(std::string(argv[1]),std::ifstream::in);
+	string mot;
+	while(myFile >> mot){
+		cout << mot;
+		}
+		
   //utilisation normale
   HashMap hmap;
   hmap.put("v1",1);
