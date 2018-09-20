@@ -16,12 +16,14 @@ using namespace std;
 /* sfasdfasdfasdfasdfads*/
 int main(int argc, char** argv) {
 if(argc<2){
-	std::cerr << "Usage:" << argv[0]<<"VOUS DEVEZ SPECIFIER LE NOM DU FICHIER"<<std::endl;
+	std::cerr << "Usage:" << argv[0]<<"VOUS DEVEZ SPECIFIER LE NOM DU FICHIER SVP"<<std::endl;
 	return 1;
 	
 	}
+
 	std::ifstream myFile(std::string(argv[1]),std::ifstream::in);
 	string mot;
+
 	while(myFile >> mot){
 		cout << mot;
 		}
